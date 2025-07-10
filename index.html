@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi amor por ti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="love__you">
+      <p>Cuanto más tiempo estoy contigo,</p>
+      <p>Más te amo. Si pudiera elegir un lugar seguro,<br> será a tu lado.</p>
+    </div>
+    <div class="date-love">
+      Mi amor por ti empezó el <span id="date"></span>
+    </div>
+  </div>
+
+  <script>
+    // Cambia esta fecha por la tuya
+    const startDate = new Date('2025-07-09');
+    const formattedDate = startDate.toLocaleDateString('es-ES', {
+      day: '2-digit', month: '2-digit', year: 'numeric'
+    });
+    document.getElementById('date').textContent = formattedDate;
+  </script>
+</body>
+</html>
